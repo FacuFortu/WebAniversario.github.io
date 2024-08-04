@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #f0958d, #e74e39); /* Define los colores del gradiente */
+    color: #333;
+}
+
+header {
+    background-color: #e61010;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 10px; /* Espacio entre los elementos */
+}
+
+main {
+    padding: 20px;
+}
+
+h1, h2 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#gallery .photos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#gallery .photos img {
+    width: calc(33% - 10px);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+footer {
+    background-color: #e61010;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e65c54;
+}
+
+.error-message {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#text-and-photo {
+    display: flex;
+    align-items: center; /* Centrar verticalmente */
+    gap: 20px; /* Espacio entre el texto y la foto */
+    margin: 20px 0; /* Espacio alrededor de la sección */
+
+    background: #f1c5c5;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+#text-and-photo .text {
+    flex: 1; /* El texto ocupará el espacio restante */
+}
+
+#text-and-photo .photo img {
+    width: 250px; /* Ajusta el ancho según tus necesidades */
+    height: 250px; /* Ajusta el alto según tus necesidades */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Sombra */
+}
